@@ -1,0 +1,29 @@
+﻿<Window x:Class="DeAnGK_Lttt.FormDN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeAnGK_Lttt"
+        mc:Ignorable="d"
+        Title="FormDNtoQLND" Height="450" Width="800" Background="Azure">
+    <StackPanel>
+        <TextBlock Text="THÔNG TIN ĐĂNG NHẬP" FontSize="25" FontWeight="Bold" Margin="240 50 0 0"></TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Margin="200 0 0 0" FontSize="20" Grid.Row="0" Text="Tên Đăng Nhập:"></TextBlock>
+            <TextBlock Margin="200 0 0 0" FontSize="20" Grid.Row="1" Text="Mật khẩu:"></TextBlock>
+            <TextBox x:Name="nametxt" Margin="0 0 100 0" Padding="5" Grid.Column="1"></TextBox>
+            <TextBox x:Name="mktxt" Margin="0 10 100 0" Padding="5" Grid.Row="1" Grid.Column="1"></TextBox>
+            <Button Grid.Row="2" Grid.Column="1" Padding="10" Margin="0.333,9.667,100.333,0" Content="Đăng Nhập" Click="Button_Click" Height="39" VerticalAlignment="Top" ></Button>
+
+        </Grid>
+    </StackPanel>
+</Window>

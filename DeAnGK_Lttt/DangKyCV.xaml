@@ -1,0 +1,116 @@
+﻿<Window x:Class="DeAnGK_Lttt.DangKyCV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeAnGK_Lttt"
+        mc:Ignorable="d"
+        Title="DangKyCV" Height="600" Width="800" Background="Beige">
+    <StackPanel>
+        <TextBlock Text="ĐĂNG KÝ LÀM VIỆC NGOÀI GIỜ" FontSize="25" FontWeight="Bold" Margin="200 20 0 10"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="198"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Từ ngày" Margin="108,0,140.333,9.333" Grid.ColumnSpan="2"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="151,0,47.333,24.667" Grid.RowSpan="2"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="43.667,31,152.333,15.667" Grid.RowSpan="3" Grid.Column="2"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="52.667,-1,143.333,0.333" Grid.Column="2"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="151,2.333,46.333,15.667" Grid.RowSpan="3" Grid.Row="2"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="154,6.333,42.333,-10.333" Grid.RowSpan="2" Grid.Row="3"/>
+            <TextBlock Foreground="red" Text="*" Grid.ColumnSpan="2" Margin="144,31,53.333,15.667" Grid.RowSpan="3"/>
+
+            <DatePicker x:Name="tngay" Margin="162,0,36.333,10.333" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Đến ngày" Grid.Column="1" Margin="198.333,0,0.333,9.333" Grid.ColumnSpan="2"/>
+            <DatePicker x:Name="dngay" Grid.Column="2" Margin="67.667,0,130.333,10.333" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Từ giờ" Grid.Row="1" Margin="108,0,140.333,9.333" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="tgio" Grid.ColumnSpan="2" Margin="162,35,36.333,15.667" Grid.RowSpan="3">
+                <ComboBoxItem Content="0:00"/>
+                <ComboBoxItem Content="1:00"/>
+                <ComboBoxItem Content="2:00"/>
+                <ComboBoxItem Content="3:00"/>
+                <ComboBoxItem Content="4:00"/>
+                <ComboBoxItem Content="5:00"/>
+                <ComboBoxItem Content="6:00"/>
+                <ComboBoxItem IsSelected="True" Content="7:00"/>
+                <ComboBoxItem Content="8:00"/>
+                <ComboBoxItem Content="9:00"/>
+                <ComboBoxItem Content="10:00"/>
+                <ComboBoxItem Content="11:00"/>
+                <ComboBoxItem Content="12:00"/>
+                <ComboBoxItem Content="13:00"/>
+                <ComboBoxItem Content="14:00"/>
+                <ComboBoxItem Content="15:00"/>
+                <ComboBoxItem Content="16:00"/>
+                <ComboBoxItem Content="17:00"/>
+                <ComboBoxItem Content="18:00"/>
+                <ComboBoxItem Content="19:00"/>
+                <ComboBoxItem Content="20:00"/>
+                <ComboBoxItem Content="21:00"/>
+                <ComboBoxItem Content="22:00"/>
+                <ComboBoxItem Content="23:00"/>
+            </ComboBox>
+            <TextBlock Text="Đến giờ" Grid.Row="1" Grid.Column="1" Margin="198.333,0,0.333,9.333" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="dgio" Grid.ColumnSpan="2" Margin="67.667,35,130.333,15.667" Grid.RowSpan="3" Grid.Column="2">
+                <ComboBoxItem Content="0:00"/>
+                <ComboBoxItem Content="1:00"/>
+                <ComboBoxItem Content="2:00"/>
+                <ComboBoxItem Content="3:00"/>
+                <ComboBoxItem Content="4:00"/>
+                <ComboBoxItem Content="5:00"/>
+                <ComboBoxItem Content="6:00"/>
+                <ComboBoxItem Content="7:00"/>
+                <ComboBoxItem Content="8:00"/>
+                <ComboBoxItem Content="9:00"/>
+                <ComboBoxItem Content="10:00"/>
+                <ComboBoxItem Content="11:00"/>
+                <ComboBoxItem Content="12:00"/>
+                <ComboBoxItem IsSelected="True" Content="13:00"/>
+                <ComboBoxItem Content="14:00"/>
+                <ComboBoxItem Content="15:00"/>
+                <ComboBoxItem Content="16:00"/>
+                <ComboBoxItem Content="17:00"/>
+                <ComboBoxItem Content="18:00"/>
+                <ComboBoxItem Content="19:00"/>
+                <ComboBoxItem Content="20:00"/>
+                <ComboBoxItem Content="21:00"/>
+                <ComboBoxItem Content="22:00"/>
+                <ComboBoxItem Content="23:00"/>
+            </ComboBox>
+            <TextBlock Text="Người đăng ký" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="72,6.333,126.333,-6.333"/>
+            <ComboBox IsEditable="True" x:Name="name" Grid.Row="2" Grid.ColumnSpan="4" Margin="162,10.333,130.333,-10.333">
+                <ComboBoxItem IsSelected="True" Content="--- Chọn người đăng ký ---"/>
+                <ComboBoxItem Content="Nguyen Thi A"/>
+                <ComboBoxItem Content="Nguyen Thi B"/>
+                <ComboBoxItem Content="Nguyen Thi C"/>
+                <ComboBoxItem Content="Vu Van A"/>
+                <ComboBoxItem Content="Vu Van B"/>
+                <ComboBoxItem Content="Vu Van C"/>
+            </ComboBox>
+            <TextBlock Text="Lý do làm thêm" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="72,11.333,126.333,-11.333"/>
+            <TextBox x:Name="lydo" RenderTransformOrigin="0.549,0.472" Grid.ColumnSpan="4" Margin="162,0.333,130.333,-37.667" Grid.Row="4"/>
+            <Button x:Name="butadd" Content="THÊM" Grid.Row="4" Margin="162,62,159,-72" Grid.ColumnSpan="2" Click="butadd_Click"/>
+            <Button x:Name="butsua" Content="SỬA" Grid.Row="4" Margin="55,62,67,-72" Grid.Column="1" Click="butsua_Click"/>
+            <Button x:Name="butxoa" Content="XÓA" Grid.Row="4" Margin="145,62,176,-72" Grid.Column="1" Grid.ColumnSpan="2" Click="butxoa_Click"/>
+            <Button x:Name="butfind" Content="TÌM TÊN" Grid.Row="4" Margin="27,100,95,-110" Grid.Column="2" RenderTransformOrigin="0.502,0.5" Click="butfind_Click"/>
+            <Button Content="BÁO CÁO" Margin="98,-22,24,30" Grid.Column="3" Click="Button_Click"/>
+            <Button x:Name="butthoat" Content="THOÁT" Grid.Row="4" Margin="191,62,130,-72" Grid.Column="2" Grid.ColumnSpan="2" Click="butthoat_Click"/>
+            <TextBox x:Name="idtxt" Margin="44,100,194,-111" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <DataGrid x:Name="grid1" Grid.ColumnSpan="4" Margin="72,140.333,73.333,-332.333" Grid.Row="4" ItemsSource="{Binding}" AutoGenerateColumns="True"/>
+            <TextBox x:Name="timtxt" Grid.Column="2" Margin="116,100,130,-112" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <TextBlock Grid.Row="4" Text="Id:" Margin="18,106,159,-106" Grid.Column="1"/>
+        </Grid>
+
+    </StackPanel>
+
+</Window>
